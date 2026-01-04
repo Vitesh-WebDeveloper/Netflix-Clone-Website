@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="head">
+        <header>
+            <div id="hero">
+
+                <nav id="navmover">
+
+                    <div class="logo">
+                        <img id="logo-transparent"
+                            src="data:image/jpeg;base64,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"
+                            alt="logo" height="56" width="170">
+                    </div>
+
+                    <div id="rbuttons">
+
+
+                        <button id="bsiz"><i class="fa-solid fa-language" style="color: #ffffff;"></i>English<i
+                                class="fa-solid fa-caret-down" style="color: #ffffff;"></i></button>
+
+
+                        <div class="two">Sign in
+                        </div>
+
+                    </div>
+
+                </nav>
+
+                <div id="bigdata">
+                    <div id="data">
+                        <div id="main-texts">
+                            <h1 class="main-text">Unlimited movies,</h1>
+                            <h1 class="main-text texts"> shows,and more</h1>
+                        </div>
+                        <h2 class="texts">Starts at ₹149. Cancel at any time.</h2>
+                        <h4 class="texts">Ready to watch? Enter your email to create or restart your membership.</h4>
+                        <div id="impbuttons">
+                            <input class="clickers" type="text" placeholder="Email address">
+                            <button class="click">Get Started ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <hr id="lineone">
+
+            <div id="mline">
+                Trending now
+            </div>
+            <div id="middleimgs">
+
+                <img class="centerimgs pic1"
+                    src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbiRdMTrAJVrZa_1vFJiDzWVDso7BGvQ3P1VZX83gR_xHPQLNl7RELRsAb4t3NT7iAZj0m48c80img-ou6WrM9rw1rNrZjsIniCKx_xsEKn3_EzEO6T1mQHqtc8RqTLFzKb4.webp?r=50e"
+                    alt="trending movies">
+                <img class="centerimgs pic2"
+                    src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABe4sznLOg8Sdj3Hb41y3_ZElp3sPp85TisSBnNXCq5CTYkMQz5peV4SPE3RLzrqJu3Jo_oF9-EOuqzbk3aDJyzJj3372fJ9i_2JIbecvsTL3o8bPQDg7kZ8_pDNLvKhD4Aq0.webp?r=b1f"
+                    alt="trending movies">
+                <img class="centerimgs pic3"
+                    src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQFmi2qrQTOShMevIIgOcMdy2h-nqU5swZHnjzJZJbnfTO_oJnzTZp4B8KKOEPMq0DzI2z5-XE4bjchCAQYlPvWR1jBzggTo3sM.webp?r=960"
+                    alt="trending movies">
+                <img class="centerimgs pic4"
+                    src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXkEYAJ3HkNVF6fUEMKnPf7aEl2G-N-4PUH0ckDltpVVIRn2bjj86nJexAQRGPyru-B1o0mw-X_YtBmMysSbbg7q0wSZqjQgJS7D4EYBaY7lhc3Kf4Rz6ST2zQVdIybAGWuL.webp?r=d59"
+                    alt="trending movies">
+                <img class="centerimgs pic5"
+                    src="https://occ-0-4857-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTJf3e14TtZ2Z3216UaphDq5nf1SaFyC-0R59wDCSyGdNROqYPTHg8g8SU0kbcn61BMumEkghBN8r11S6_bhQvNJ4oQD4oECM-M.webp?r=e5d"
+                    alt="trending movies">
+
+            </div>
+
+            <div>
+                <h4 class="hline">More reasons to join</h4>
+            </div>
+
+            <div id="Yboxes">
+                <div id="impboxes">
+                    <div class="why-netflix">
+                        <h3 class="hlarge">Enjoy on your TV</h3>
+                        <p class="plarge">
+                            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                        </p>
+                    </div>
+
+                    <div class="why-netflix">
+                        <h3 class="hlarge">Download your shows to watch offline</h3>
+                        <p class="plarge">Save your favourites easily and always have something to watch.</p>
+                    </div>
+
+                    <div class="why-netflix">
+                        <h3 class="hlarge">Watch everywhere</h3>
+                        <p class="plarge">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                        </p>
+                    </div>
+
+                    <div class="why-netflix">
+                        <h3 class="hlarge">Create profiles for kids</h3>
+                        <p class="plarge">Send kids on adventures with their favourite characters in a space made just
+                            for them — free with
+                            your
+                            membership.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <div id="footend">
+                <div id="f-end">
+
+                </div>
+                <div id="fmiddle">
+                    <h4 class="texts Ready">Ready to watch? Enter your email to create or restart your membership.</h4>
+
+
+                    <div id="impbuttons">
+                        <input class="clickers" type="text" placeholder="Email address">
+                        <button class="click">Get Started ></button>
+                    </div>
+                </div>
+                <div id="question">
+                    Questions? Call 000-800-919-1743
+                </div>
+
+                <div id="bigcontainer">
+                    <div class="container">
+                        <div class="sbox"><a class="acolor" href="#">FAQ</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Help Centre</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Account</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Media Centre</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Investor Relations</a></div>
+                        <div class="sbox"><a class="acolor" href="#">Jobs</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Ways to Watch</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Terms of Use</a>
+                        </div>
+                        <div class="sbox"><a class="acolor" href="#">Privacy</a></div>
+
+                        <div class="sbox"><a class="acolor" href="#">Cookie Preferences</a></div>
+
+                        <div class="sbox"><a class="acolor" href="#">Corporate Information</a></div>
+
+                        <div class="sbox"><a class="acolor" href="#">Contact Us</a></div>
+
+                        <div class="sbox"><a class="acolor" href="#">Speed Test</a></div>
+
+                        <div class="sbox"><a class="acolor" href="#">Legal Notices</a></div>
+
+                        <div class="sbox"><a class="acolor" href="#">Only on Netflix</a></div>
+
+                    </div>
+                </div>
+
+                <div id="name">
+                    <button id="bsize"><i class="fa-solid fa-language" style="color: #ffffff;"></i>English<i
+                            class="fa-solid fa-caret-down" style="color: #ffffff;"></i></button>
+                </div>
+                <h5 id="lcolor">Netflix India</h5>
+
+        </footer>
+    </div>
+</body>
+
+</html>

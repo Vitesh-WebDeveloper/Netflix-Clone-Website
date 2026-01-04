@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#head {
+    max-height: 100vh;
+    width: 100%;
+}
+
+#bsiz {
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 560;
+    font-family: "Poppins", sans-serif;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#hero {
+    max-height: 100vh;
+    width: 100%;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/9ddb442a-aca7-4d85-9cd1-dbed62f18f26/web/IN-en-20251222-TRIFECTA-perspective_a882efaa-75c8-4143-9dc1-4f9932a791ac_large.jpg);
+}
+
+#navmover {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#rbuttons {
+    max-height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+    padding-right: 20px;
+}
+
+.logo {
+    max-height: 100vh;
+    width: auto;
+    margin-top: 50px;
+    padding: 30px;
+    margin-left: 60px;
+
+}
+
+.two {
+    max-height: 100vh;
+    max-width: 100vh;
+    padding: 6px;
+    color: white;
+    background-color: red;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 560;
+    border-radius: 6px;
+}
+
+#bigdata {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    gap: 10px;
+
+    max-width: 800px;
+    width: 100%;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#main-texts {
+    height: 180px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#impboxes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.clickers {
+    height: 56px;
+    width: min(360px, 90vw);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.click {
+    height: 56px;
+    width: min(210px, 90vw);
+    border-radius: 6px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: red;
+}
+
+#lineone {
+    border: 2px solid red;
+}
+
+.click:hover,
+.two:hover {
+    background-color: #e50914;
+    cursor: pointer;
+}
+
+#mline {
+    height: 56px;
+    width: 360px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#middleimgs {
+    /* max-height: 100vh;
+    width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.centerimgs {
+    border-radius: 14px;
+}
+
+.hline {
+    height: 56px;
+    width: 360px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.why-netflix {
+    height: 270px;
+    width: 290px;
+    border: 2px solid greenyellow;
+    background-color: aqua;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.hlarge {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.plarge {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#Yboxes {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#fmiddle {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+#f-end {
+    max-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+#question {
+    height: 56px;
+    width: 360px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#bigcontainer {
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.acolor {
+    color: white;
+}
+
+.container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+#bsize {
+    height: auto;
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 560;
+    font-family: "Poppins", sans-serif;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: black;
+    border: 1px solid white;
+
+}
+
+#name {
+    height: 34px;
+    width: 264px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#lcolor {
+    height: 34px;
+    width: 256px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+main {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .main-text {
+        font-size: 32px;
+    }
+
+    #navmover {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #impboxes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .why-netflix {
+        width: 90%;
+        height: auto;
+    }
+
+    /* .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    } */
+}
+
+@media (max-width: 480px) {
+    .main-text {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbars {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #navmover {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 8px;
+    }
+}
